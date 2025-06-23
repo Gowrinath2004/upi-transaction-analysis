@@ -1,0 +1,1586 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420?rev=1.1' id='project1_17502976724420' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='upi_transactions_2024' inline='true' name='federated.0o2zn4q12iucto19ljjx91whzk4z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='upi_transactions_2024' name='textscan.1q9i7to1v0d4go1bngs8a1hoox8g'>
+            <connection class='textscan' directory='C:/Users/LENOVO/Downloads/Sql' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1q9i7to1v0d4go1bngs8a1hoox8g' name='upi_transactions_2024.csv' table='[upi_transactions_2024#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='datetime' name='timestamp' ordinal='1' />
+            <column datatype='string' name='transaction type' ordinal='2' />
+            <column datatype='string' name='merchant_category' ordinal='3' />
+            <column datatype='integer' name='amount (INR)' ordinal='4' />
+            <column datatype='string' name='transaction_status' ordinal='5' />
+            <column datatype='string' name='sender_age_group' ordinal='6' />
+            <column datatype='string' name='receiver_age_group' ordinal='7' />
+            <column datatype='string' name='sender_state' ordinal='8' />
+            <column datatype='string' name='sender_bank' ordinal='9' />
+            <column datatype='string' name='receiver_bank' ordinal='10' />
+            <column datatype='string' name='device_type' ordinal='11' />
+            <column datatype='string' name='network_type' ordinal='12' />
+            <column datatype='integer' name='fraud_flag' ordinal='13' />
+            <column datatype='integer' name='hour_of_day' ordinal='14' />
+            <column datatype='string' name='day_of_week' ordinal='15' />
+            <column datatype='integer' name='is_weekend' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction type]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>transaction type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[merchant_category]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>merchant_category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount (INR)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[amount (INR)]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>amount (INR)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_status]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>transaction_status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender_age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender_age_group]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>sender_age_group</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>receiver_age_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[receiver_age_group]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>receiver_age_group</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender_state]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>sender_state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sender_bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sender_bank]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>sender_bank</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>receiver_bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[receiver_bank]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>receiver_bank</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[device_type]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>device_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>network_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[network_type]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>network_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fraud_flag]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>fraud_flag</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour_of_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour_of_day]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>hour_of_day</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_weekend</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_weekend]</local-name>
+            <parent-name>[upi_transactions_2024.csv]</parent-name>
+            <remote-alias>is_weekend</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='upi_transactions_2024.csv' datatype='table' name='[__tableau_internal_object_id__].[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]' role='measure' type='quantitative' />
+      <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
+      <column caption='Device Type' datatype='string' name='[device_type]' role='dimension' type='nominal' />
+      <column caption='Fraud Flag' datatype='integer' name='[fraud_flag]' role='measure' type='quantitative' />
+      <column caption='Hour Of Day' datatype='integer' name='[hour_of_day]' role='dimension' type='quantitative' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Is Weekend' datatype='integer' name='[is_weekend]' role='measure' type='quantitative' />
+      <column caption='Merchant Category' datatype='string' name='[merchant_category]' role='dimension' type='nominal' />
+      <column caption='Network Type' datatype='string' name='[network_type]' role='dimension' type='nominal' />
+      <column caption='Receiver Age Group' datatype='string' name='[receiver_age_group]' role='dimension' type='nominal' />
+      <column caption='Receiver Bank' datatype='string' name='[receiver_bank]' role='dimension' type='nominal' />
+      <column caption='Sender Age Group' datatype='string' name='[sender_age_group]' role='dimension' type='nominal' />
+      <column caption='Sender Bank' datatype='string' name='[sender_bank]' role='dimension' type='nominal' />
+      <column caption='Sender State' datatype='string' name='[sender_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Transaction Type' datatype='string' name='[transaction type]' role='dimension' type='nominal' />
+      <column caption='Transaction Status' datatype='string' name='[transaction_status]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0szkxan14vii39103hesx13lbe1z.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/19/2025 01:36:42 AM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>250000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>1</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>239224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchant_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[merchant_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>merchant_category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount (INR)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[amount (INR)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount (INR)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13941</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sender_age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sender_age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sender_age_group</remote-alias>
+              <ordinal>6</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>receiver_age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[receiver_age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>receiver_age_group</remote-alias>
+              <ordinal>7</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sender_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sender_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sender_state</remote-alias>
+              <ordinal>8</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sender_bank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sender_bank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sender_bank</remote-alias>
+              <ordinal>9</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>receiver_bank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[receiver_bank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>receiver_bank</remote-alias>
+              <ordinal>10</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>device_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[device_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>device_type</remote-alias>
+              <ordinal>11</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>network_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[network_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>network_type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fraud_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_flag</remote-alias>
+              <ordinal>13</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hour_of_day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour_of_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour_of_day</remote-alias>
+              <ordinal>14</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_of_week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_of_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_of_week</remote-alias>
+              <ordinal>15</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_weekend</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_weekend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_weekend</remote-alias>
+              <ordinal>16</ordinal>
+              <family>upi_transactions_2024.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='upi_transactions_2024.csv' id='upi_transactions_2024.csv_8AB2B9F077F244B5A446537E3C0E8801'>
+            <properties context=''>
+              <relation connection='textscan.1q9i7to1v0d4go1bngs8a1hoox8g' name='upi_transactions_2024.csv' table='[upi_transactions_2024#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='datetime' name='timestamp' ordinal='1' />
+                  <column datatype='string' name='transaction type' ordinal='2' />
+                  <column datatype='string' name='merchant_category' ordinal='3' />
+                  <column datatype='integer' name='amount (INR)' ordinal='4' />
+                  <column datatype='string' name='transaction_status' ordinal='5' />
+                  <column datatype='string' name='sender_age_group' ordinal='6' />
+                  <column datatype='string' name='receiver_age_group' ordinal='7' />
+                  <column datatype='string' name='sender_state' ordinal='8' />
+                  <column datatype='string' name='sender_bank' ordinal='9' />
+                  <column datatype='string' name='receiver_bank' ordinal='10' />
+                  <column datatype='string' name='device_type' ordinal='11' />
+                  <column datatype='string' name='network_type' ordinal='12' />
+                  <column datatype='integer' name='fraud_flag' ordinal='13' />
+                  <column datatype='integer' name='hour_of_day' ordinal='14' />
+                  <column datatype='string' name='day_of_week' ordinal='15' />
+                  <column datatype='integer' name='is_weekend' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Fraud rate according to Region&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420/Sheet1?rev=' id='118125013' path='/workbooks/project1_17502976724420' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='upi_transactions_2024' name='federated.0o2zn4q12iucto19ljjx91whzk4z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o2zn4q12iucto19ljjx91whzk4z'>
+            <column-instance column='[fraud_flag]' derivation='Avg' name='[avg:fraud_flag:qk]' pivot='key' type='quantitative' />
+            <column caption='Fraud Flag' datatype='integer' name='[fraud_flag]' role='measure' type='quantitative' />
+            <column-instance column='[sender_state]' derivation='None' name='[none:sender_state:nk]' pivot='key' type='nominal' />
+            <column caption='Sender State' datatype='string' name='[sender_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:sender_state:nk]' value='19' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:sender_state:nk]</rows>
+        <cols>[federated.0o2zn4q12iucto19ljjx91whzk4z].[avg:fraud_flag:qk]</cols>
+      </table>
+      <simple-id uuid='{9950FEDC-CB07-4077-841F-8259F59FA6CD}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Merchant category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420/Sheet2?rev=' id='118266876' path='/workbooks/project1_17502976724420' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='upi_transactions_2024' name='federated.0o2zn4q12iucto19ljjx91whzk4z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o2zn4q12iucto19ljjx91whzk4z'>
+            <column datatype='integer' name='[amount (INR)]' role='measure' type='quantitative' />
+            <column caption='Merchant Category' datatype='string' name='[merchant_category]' role='dimension' type='nominal' />
+            <column-instance column='[merchant_category]' derivation='None' name='[none:merchant_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount (INR)]' derivation='Sum' name='[sum:amount (INR):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]' />
+              <wedge-size column='[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5052486658096313' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Education&quot;</value>
+                <value>38704346</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Entertainment&quot;</value>
+                <value>8309080</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Food&quot;</value>
+                <value>19919402</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Fuel&quot;</value>
+                <value>38982575</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Grocery&quot;</value>
+                <value>58277893</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Healthcare&quot;</value>
+                <value>6874159</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Other&quot;</value>
+                <value>21073449</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shopping&quot;</value>
+                <value>76863207</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Transport&quot;</value>
+                <value>6192416</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                  <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Utilities&quot;</value>
+                <value>52742482</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Education&quot;</value>
+                    <value>38704346</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Entertainment&quot;</value>
+                    <value>8309080</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Food&quot;</value>
+                    <value>19919402</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Fuel&quot;</value>
+                    <value>38982575</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Grocery&quot;</value>
+                    <value>58277893</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Healthcare&quot;</value>
+                    <value>6874159</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Other&quot;</value>
+                    <value>21073449</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Shopping&quot;</value>
+                    <value>76863207</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Transport&quot;</value>
+                    <value>6192416</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='9' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Utilities&quot;</value>
+                    <value>52742482</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='12' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>Merchant Category: </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>amount (INR): </run>
+              <run bold='true'><![CDATA[<[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</field>
+                      <field>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Utilities&quot;</value>
+                    <value>52742482</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{0F3522C7-9D2F-4143-879C-0FA7BD4CF684}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total spent summary&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420/Sheet3?rev=' id='118266877' path='/workbooks/project1_17502976724420' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='upi_transactions_2024' name='federated.0o2zn4q12iucto19ljjx91whzk4z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o2zn4q12iucto19ljjx91whzk4z'>
+            <column datatype='integer' name='[amount (INR)]' role='measure' type='quantitative' />
+            <column caption='Merchant Category' datatype='string' name='[merchant_category]' role='dimension' type='nominal' />
+            <column-instance column='[merchant_category]' derivation='None' name='[none:merchant_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount (INR)]' derivation='Sum' name='[sum:amount (INR):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Education&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Fuel&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Grocery&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Healthcare&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Other&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Shopping&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Transport&quot;' />
+              <groupfilter function='member' level='[none:merchant_category:nk]' member='&quot;Utilities&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]</rows>
+        <cols>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</cols>
+      </table>
+      <simple-id uuid='{540ADC2C-9B27-47F1-BB51-954FD7C3677D}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Spend Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420/Sheet4?rev=' id='118266878' path='/workbooks/project1_17502976724420' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='upi_transactions_2024' name='federated.0o2zn4q12iucto19ljjx91whzk4z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o2zn4q12iucto19ljjx91whzk4z'>
+            <column datatype='integer' name='[amount (INR)]' role='measure' type='quantitative' />
+            <column-instance column='[timestamp]' derivation='Day' name='[dy:timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[transaction_status]' derivation='None' name='[none:transaction_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount (INR)]' derivation='Sum' name='[sum:amount (INR):qk]' pivot='key' type='quantitative' />
+            <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+            <column caption='Transaction Status' datatype='string' name='[transaction_status]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:transaction_status:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:transaction_status:nk]' member='&quot;FAILED&quot;' />
+              <groupfilter function='member' level='[none:transaction_status:nk]' member='&quot;SUCCESS&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:transaction_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0o2zn4q12iucto19ljjx91whzk4z].[sum:amount (INR):qk]</rows>
+        <cols>[federated.0o2zn4q12iucto19ljjx91whzk4z].[dy:timestamp:ok]</cols>
+      </table>
+      <simple-id uuid='{AF7C6B37-32B8-4075-AFAB-CDD4F73197A4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/project1_17502976724420/Dashboard1?rev=' id='118266879' path='/workbooks/project1_17502976724420' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='16' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='98002' id='13' param='horz' type-v2='layout-flow' w='89378' x='483' y='999'>
+              <zone h='98002' id='6' type-v2='layout-basic' w='89378' x='483' y='999'>
+                <zone h='48991' id='3' name='Sheet 1' w='44683' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49011' id='10' name='Sheet 4' w='44695' x='45166' y='49990'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48991' id='14' name='Sheet 2' w='44695' x='45166' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49011' id='18' name='Sheet 3' w='44683' x='483' y='49990'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98002' id='15' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='999'>
+              <zone h='29963' id='17' name='Sheet 2' pane-specification-id='0' param='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]' type-v2='color' w='9656' x='89861' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='21' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='48997' id='3' is-fixed='true' name='Sheet 1' w='44687' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48997' id='14' is-fixed='true' name='Sheet 2' w='44691' x='45170' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='29963' id='17' name='Sheet 2' pane-specification-id='0' param='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]' type-v2='color' w='9656' x='89861' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49005' id='18' is-fixed='true' name='Sheet 3' w='44687' x='483' y='49996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49005' id='10' is-fixed='true' name='Sheet 4' w='44691' x='45170' y='49996'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DD6EC6F5-FA8C-4F0D-BA49-6F7B220F297C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A82F00A-88EE-48E5-AF34-65314613225A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o2zn4q12iucto19ljjx91whzk4z].[none:merchant_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{E044CAD7-70F1-438B-8389-66993DF202BE}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8124B7D7-959D-4752-8016-BCACD0DAF844}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2309307E-1CC9-436E-88A0-E244F10AF088}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{DD7EEEE5-F8BC-44F2-B923-413EC4A443F5}' />
+    </window>
+  </windows>
+</workbook>
