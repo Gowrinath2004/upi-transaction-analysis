@@ -1,20 +1,20 @@
-# UPI Transaction Analysis Project
+# UPI Transaction Data Analysis 🚀
 
-This project analyzes UPI transactions to uncover spending patterns, peak usage times, top merchants, and potential fraudulent activity.
+## 📌 Project Overview
+Analyze UPI transactions to identify spending patterns, peak times, top merchants, and potential fraud.
 
-## Files
+## 📊 Dashboard
+See the dashboard [here](https://public.tableau.com/views/YOUR_DASHBOARD_LINK)  
+OR  
+![Dashboard Screenshot](reports/upi_dashboard.png)
 
-- `data/upi_transactions_clean.csv` — cleaned dataset
-- `notebooks/upi_analysis.ipynb` — Python notebook with data cleaning, EDA, stats
-- `dashboards/upi_dashboard.twbx` — Tableau dashboard file (open in Tableau)
+## 📂 Files
+- `data/upi_transactions_2024.csv` → Raw dataset  
+- `notebooks/upi_analysis.ipynb` → Data cleaning, EDA, analysis code  
+- `reports/upi_dashboard.png` → Tableau dashboard screenshot  
 
-## Insights
-
-- Top merchants by spend
-- Spend heatmap by hour/day
-- High-value transactions flagged
-
-## How to Run
-
-1. Open `notebooks/upi_analysis.ipynb` in Jupyter.
-2. Open `dashboards/upi_dashboard.twbx` in Tableau.
+## ⚡ Tools Used
+- Python, Jupyter, pandas, seaborn  
+- Tableau  
+- VS Code  
+- GitHub
